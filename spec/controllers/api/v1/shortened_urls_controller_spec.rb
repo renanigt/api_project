@@ -5,6 +5,10 @@ RSpec.describe Api::V1::ShortenedUrlsController, type: :controller do
 
   describe '#create' do
     context 'with success' do
+      before(:each) do
+        expect(PullTitleWorker).to receive(:perform_async).with(any_args, 'www.new.com.br')
+      end
+
       it 'creates a new ShortenedUrl' do
         expect {
           post :create, params: { shortened_url: { original_url: 'www.new.com.br' } }
