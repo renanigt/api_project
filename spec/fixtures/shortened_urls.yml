@@ -1,0 +1,29 @@
+yahoo:
+  original_url: 'www.yahoo.com'
+  token: 'ab1'
+  number_accesses: 1
+
+google:
+  original_url: 'www.google.com'
+  token: 'ab2'
+  number_accesses: 2
+
+gmail:
+  original_url: 'www.gmail.com'
+  token: 'ab3'
+  number_accesses: 5
+
+rails:
+  original_url: 'www.rails.com'
+  token: 'ab4'
+  number_accesses: 6
+
+twitter:
+  original_url: 'www.twitter.com'
+  token: 'ab5'
+  number_accesses: 3
+
+sublime:
+  original_url: 'www.sublime.com'
+  token: 'ab6'
+  number_accesses: 4
