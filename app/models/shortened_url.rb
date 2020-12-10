@@ -1,6 +1,6 @@
 class ShortenedUrl < ApplicationRecord
   before_validation :generate_token
-  after_commit :get_title
+  after_create :get_title
 
   validates :original_url, :token, presence: true, uniqueness: true
 
